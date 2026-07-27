@@ -1,7 +1,24 @@
 aid: gantto
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gantto.png
 name: Gantto
-description: Gantto is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Gantto was a web-based Gantt chart and project scheduling SaaS launched in August 2010, backed by Y Combinator
+  and 500 Startups (500 Global). It let teams create and share project schedules in the browser as an alternative to
+  Microsoft Project, with a customer base that reportedly included Twitter, Lucasfilm, and Fujitsu. Gantto was acquired
+  by Dutch competitor Tom's Planner on July 9, 2013, and the product was subsequently discontinued, with users migrated
+  to Tom's Planner. gantto.com now redirects to tomsplanner.com. This company is retained in the API Evangelist network
+  as a historical portfolio-lead record; it publishes no developer program, API, or technical surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/gantto/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +26,19 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-reason: acquired-by-toms-planner-2013-product-discontinued
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Project Management
+- Gantt Chart
+- Project Scheduling
+- SaaS
+- Defunct
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +48,13 @@ maintainers:
 common:
 - type: Website
   url: https://gantto.com
+- type: Acquirer
+  name: Tom's Planner
+  url: https://www.tomsplanner.com
+- type: CrunchBase
+  url: https://www.crunchbase.com/organization/gantto
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
